@@ -44,6 +44,12 @@ module.exports = {
           ]
         }
       }, // 先解析ts和tsx，rule规则从下往上
+      {
+        test: /\.tsx$/,
+        use: ['eslint-loader'],
+        exclude: [/node_modules/],
+        enforce: 'pre'
+      }
     ]
   }
 };

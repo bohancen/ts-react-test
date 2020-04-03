@@ -8,7 +8,10 @@ const event = {
   async click(){
     console.log('1秒后显示')
     await new Promise(r=>setTimeout(r,1000))
-    alertDialog('显示')
+    let i = 100
+    if(i == 100){
+      alertDialog('显示')
+    }
   }
 }
 
